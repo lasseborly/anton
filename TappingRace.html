@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Minigame: Tapping-Race</title>
+  <style>
+   
+    body{
+     overflow: hidden;
+     border: 5px solid navy;
+     height: calc(100vh - 25px);
+    }
+
+    #enemy {
+      font-size: 50px;
+      position: absolute;
+      top: 300px;
+      left: 10px;
+      color: red;
+      background: orange;
+    }
+
+     #hero {
+      font-size: 50px;
+      position: absolute;
+      top: 220px;
+      left: 10px;
+      color: black;
+      background: tomato;
+    }
+    .text {
+
+    }
+    #heroCounter {
+     font-size: 100px;
+     color: tomato;
+     font-family: Helvetica ;
+    }
+
+    #enemyCounter {
+      font-size: 100px;
+      color: orange;
+      font-family: Helvetica
+    }
+    #heroCounter, #enemyCounter, #space {
+      display: inline;
+    }
+
+    #counterBox {
+      text-align: right;
+      margin:10px;
+    }
+
+    #space {
+      font-size: 100px;
+      color: orangered;
+      font-family: Helvetica;
+    }
+
+    #dataCitat {
+      font-family: Helvetica ;
+      color: orangered ;
+    }
+  </style>
+</head>
+<body>
+ <div class="text" id="counterBox">
+  <div class="text" id="heroCounter">0</div>
+  <span class="text" id="space" >-</span>
+  <div class="text" id="enemyCounter">0</div>
+    </div>
+  <h1 id="dataCitat">Use D and →</h1>
+  <div id="hero">&#x1F41E;</div>
+  <div id="enemy">&#x1F41D;</div>
+
+  <a href="Homepage.html"><u> <p>Home</p></u> </a>
+  <script>
+
+    var hero = document.getElementById('hero')
+    var enemy = document.getElementById('enemy')
+    var heroCounter = document.getElementById('heroCounter')
+    var enemyCounter = document.getElementById('enemyCounter')
+    var space = document.getElementById('space')
+    console.log(window.innerHeight)
+    console.log(window.innerWidth)
+    
+   
+    var winPoints = 3
+    hero.points = 0
+    enemy.points = 0
+
+    console.log(hero.points)
+    console.log(enemy.points) 
+
+     
+    
+    function moveUp (player, speed = 10 ) {
+      /*
+      var currentPosition = parseInt(window.getComputedStyle(player).top, 10)
+      console.log(currentPosition)
+      if(currentPosition > 0){
+        player.style.top = String(currentPosition - speed) + 'px'
+      }
+       */
+    }
+
+    function moveDown (player) {
+      /*
+      var currentPosition = parseInt(window.getComputedStyle(player).top, 10) 
+      console.log(currentPosition)
+      if(currentPosition < window.innerHeight - 70){
+        player.style.top = String(currentPosition + 10) + 'px'
+      }
+      */
+    }
+
+    function moveRight (player) {
+      if(winPoints !== hero.points && winPoints !== enemy.points) {
+      var currentPosition = parseInt(window.getComputedStyle(player).left, 10) /*
+      console.log(currentPosition)
+      */
+      if(currentPosition < window.innerWidth - 75) {
+        player.style.left = String(currentPosition + 10) + 'px'
+      } 
+   
+      else {
+
+        player.points = player.points + 1
+        
+
+        player.style.left = '20px'
+        console.log(player.points)
+        
+        enemyCounter.innerText = enemy.points
+        heroCounter.innerText = hero.points
+        if (hero.points === winPoints) {
+          console.log('Red WINS!')
+          space.innerText = '-RED WINS!!-'
+        }
+          
+        if (enemy.points === winPoints) {
+            console.log('Yellow WINS!')
+            space.innerText = '-YELLOW WINS!-'
+        }
+      }
+    }
+  }
+    function moveLeft (player) {
+      /*
+      var currentPosition = parseInt(window.getComputedStyle(player).left, 10)
+      console.log(currentPosition) 
+      if(currentPosition > 0) {
+        player.style.left = String(currentPosition - 10) + 'px'
+      }
+      */
+    }
+
+    document.addEventListener('keydown', function (event) {
+      switch (event.keyCode) {
+        case 83:
+          moveDown(enemy)
+          break
+        case 87:
+          moveUp(enemy)
+          break
+        case 68:
+          moveRight(enemy)
+          break
+        case 65:
+          moveLeft(enemy)
+          break
+        case 37:
+          moveLeft(hero)
+          break
+        case 38:
+          moveUp(hero,)
+          break
+        case 39:
+          moveRight(hero)
+          break
+        case 40:
+          moveDown(hero)
+          break
+      }
+    })
+  </script>
+</body>
+</html>
