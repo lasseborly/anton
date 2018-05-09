@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Minigame: Tapping-Race</title>
+  <title>Tapping-Race</title>
   <style>
    
     body{
@@ -16,7 +16,7 @@
     #enemy {
       font-size: 50px;
       position: absolute;
-      top: 300px;
+      top: 350px;
       left: 10px;
       color: red;
       background: orange;
@@ -63,6 +63,13 @@
       font-family: Helvetica ;
       color: orangered ;
     }
+
+    .homelink {
+    color: orangered;
+    font-family: Helvetica ;
+    position: absolute;
+    bottom: 0;
+    }
   </style>
 </head>
 <body>
@@ -75,7 +82,7 @@
   <div id="hero">&#x1F41E;</div>
   <div id="enemy">&#x1F41D;</div>
 
-  <a href="index.html"><u> <p>Home</p></u> </a>
+  <a href="index.html" class="homelink"> <h1 >Home</h1></a>
   <script>
 
     var hero = document.getElementById('hero')
