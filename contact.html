@@ -39,29 +39,67 @@
 </head>
 <body>
   
-    <nav class="level">
-  <p class="level-item has-text-centered">
-    <a href="index.html" class="link is-info">Home</a>
-  </p>
-  
-  <p class="level-item has-text-centered">
-    <a href="https://www.youtube.com/channel/UCut_Yg3wAP-XKQNP49IQWDQ">
-
-    	<img src="https://yt3.ggpht.com/a-/AJLlDp3pyQ9KaYVWE5xFTIrkLyJ7gM4NeeEkXCbppA=s900-mo-c-c0xffffffff-rj-k-no" alt="" style="height: 80px;">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://www.youtube.com/channel/UCQxASKhMmkqPw4kowKSm1xQ/videos">
+      <img src="Titelfoto.png" width="" height="28">
     </a>
-  </p>
-  <p class="level-item has-text-centered">
-    <a href="https://www.youtube.com/channel/UCQxASKhMmkqPw4kowKSm1xQ?">
 
-    	<img src="https://lh3.googleusercontent.com/-pgW5gAJdWcg/Wdfdn9QyspI/AAAAAAAAACc/35tqRmJSkPEOcoI8oTWkXTS5R0tcaakAACEwYBhgL/w139-h140-p/Unbenannt123456789.png" alt="" style="height: 80px;">
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
     </a>
-  </p>
- 
-  <p class="level-item has-text-centered">
-    <a class="link is-info" href="#footer">Contact</a>
-  </p>
-</nav>
   </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+
+    <div class="navbar-start">
+
+      <a class="navbar-item" href="index.html">
+        Home
+      </a>
+
+      <a class="navbar-item" href="Merch.html">
+        Merch
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Other:
+        </a>
+
+        <div class="navbar-dropdown" >
+          <a class="navbar-item" href="https://www.youtube.com/channel/UCQxASKhMmkqPw4kowKSm1xQ">
+            Youtube
+          </a>
+
+          <a class="navbar-item" href="https://www.instagram.com/chezzeduck/">
+            Instagram
+          </a>
+
+          <a class="navbar-item" href="https://twitter.com/Chezzeproducti1">
+            Twitter
+          </a>
+
+          <a class="navbar-item" href="https://discordapp.com/channels/418439911910277123/426074972864249867">
+            Discord
+          </a>
+
+          <a class="navbar-item" href="contact.html">
+            Contact on website
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+
 
   <div class='container'>
 
@@ -121,35 +159,73 @@
   	</div>
 
   		
-<footer class="footer">
-  <div class="container">
-     <div class="columns is-gapless">
-   <div id="footer" class="column">
-      Contact:
-      
-      <p> <a href="https://mail.google.com" class="link is-info">Chezzeduck@gmail.com</a></p>
+<footer id="footer" class="footer">
 
- <p> Or send a mesage
-       <a href="contact.html" class="link is-info"> here!
+
+     <div class="columns is-gapless">
+
+
+   <div class="column">
+      
+      
+    
+     
+      <p> 
+
+       <a href="contact.html" class="link is-info"> Contact me
         </a>
     </p>
-      
-      <a href="https://discordapp.com/channels/418439911910277123/426074972864249867" class="link is-info"> Discord 
+    <br>
+    
+      <p> 
+        <a href="https://discordapp.com/channels/418439911910277123/426074972864249867" class="link is-info">
+          Discord 
         </a>
+      </p>
+      <br>
+
     </div>
-
   <div class="column">
-    <p> <a href="index.html" class="link is-info">Home</a> </p>
-
+    <p> <a href="index.html" class="link is-info">Home
+    </a> </p>
+    <br>
+    <p> </p>
     <p> <a href="Merch.html" class="link is-info">Merch</a></p>
     </div>
+
+    <br>
+
   <div class="column">
-     <P> This side was made with Bulma</p>
+     <P> This side was made with Bulma </p>
 
      <P> <strong>2018</strong> </P>
-   </div>
   </div>
   </div>
 </footer>
+
+
+
+
+<script>
+  console.log('Hello World!')
+
+  var menuOpen = document.querySelector('.navbar-burger');
+  var menu = document.querySelector(
+    '.navbar-menu') ;
+
+  menuOpen.addEventListener('click', function(){
+    console.log('U ok?')
+
+    menuOpen.classList.toggle('is-active')
+
+    menu.classList.toggle('is-active')
+
+  }  )
+  
+
+</script>
+
+
+
 </body>
 </html>
