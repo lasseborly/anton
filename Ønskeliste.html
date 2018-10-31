@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ønskeliste</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.css">
+  <style>
+  	p.title {
+  		text-align: center;
+  	}
+
+  	p.subtitle{
+  		text-align: center;
+  	}
+
+  	.column {border-radius:25px;
+  			margin:25px;
+  		}
+  	.button {
+  		width: 80%;
+  		display: block;
+  		margin: 0 auto;
+  	}
+  	iframe {
+  		display: block;
+  		margin: 0 auto;
+  		width: 100%;
+  	}
+  	.tesla {
+  		display: flex;
+   		align-items: center;
+  	}
+  	.link {
+  		color: DarkTurquoise ;
+  	}
+    /* The container */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  </style>
+</head>
+<body>
+  
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://www.youtube.com/channel/UCQxASKhMmkqPw4kowKSm1xQ/videos">
+      <img src="Titelfoto.png" width="" height="28">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+
+    <div class="navbar-start">
+
+      <a class="navbar-item" href="index.html">
+        Home
+      </a>
+
+      <a class="navbar-item" href="Merch.html">
+        Merch
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Other:
+        </a>
+
+        <div class="navbar-dropdown" >
+          <a class="navbar-item" href="https://www.youtube.com/channel/UCQxASKhMmkqPw4kowKSm1xQ">
+            Youtube
+          </a>
+
+          <a class="navbar-item" href="https://www.instagram.com/chezzeduck/">
+            Instagram
+          </a>
+
+          <a class="navbar-item" href="https://twitter.com/Chezzeproducti1">
+            Twitter
+          </a>
+
+          <a class="navbar-item" href="https://discordapp.com/channels/418439911910277123/426074972864249867">
+            Discord
+          </a>
+
+          <a class="navbar-item" href="contact.html">
+            Contact on website
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div class='container'>
+
+  	<div class='content'>
+
+  	<div class='columns is-centered'>
+  		<div class="column is-three-quarters has-background-light">
+    	<p class="title is-1"> Ønskeliste </p>
+    	</div>
+	</div>
+
+   
+
+
+    <div class="columns   is-centered">
+
+      <div class="tesla column  has-background-light is-three-quarters">
+        
+          <p class= 'content is-medium is-centered'>
+
+            Hej! 
+            Velkommen til min ønskeliste!
+
+            Denne ønskeliste er lidt speciel.
+            Alt hvad i giver til mig kan i krydse af så der ikke er andre der køber gaven.
+
+
+          <br>
+          <br>
+        <label class="checkbox-container">
+        <input type="checkbox" id="xbox" checked="checked"> Xbox One X  -  3200 kr
+        <span class="checkmark"></span>
+        </label>
+
+        <label class="checkbox-container">
+        <input type="checkbox" id="sofa"> Sofa  -  5000 kr
+        <span class="checkmark"></span>
+        </label>
+
+        <label class="checkbox-container"> 
+        <input type="checkbox" id="model-3"> Model 3  -  261907 kr 
+        <span class="checkmark"></span>
+        </label>
+
+
+        <label class="checkbox-container">
+        <input type="checkbox"> Attack Helicopter  -  91.018.451 kr
+        <span class="checkmark"></span>
+        </label>
+
+
+
+       
+        </p>
+      
+      </div>
+
+    
+    </div>
+
+
+
+  		
+<footer id="footer" class="footer">
+
+
+     <div class="columns is-gapless">
+
+
+   <div class="column">
+      
+
+
+
+
+    
+     
+      <p> 
+
+       <a href="contact.html" class="link is-info"> Contact me
+        </a>
+    </p>
+    <br>
+    
+      <p> 
+        <a href="https://discordapp.com/channels/418439911910277123/426074972864249867" class="link is-info">
+          Discord 
+        </a>
+      </p>
+      <br>
+
+    </div>
+  <div class="column">
+    <p> <a href="index.html" class="link is-info">Home
+    </a> </p>
+    <br>
+    <p> </p>
+    <p> <a href="Merch.html" class="link is-info">Merch</a></p>
+    </div>
+
+    <br>
+
+  <div class="column">
+     <P> This side was made with Bulma </p>
+
+     <P> <strong>2018</strong> </P>
+  </div>
+  </div>
+</footer>
+
+
+
+<script>
+
+  console.log('Hello World!')
+
+
+
+  var menuOpen = document.querySelector('.navbar-burger');
+  var menu = document.querySelector(
+    '.navbar-menu') ;
+
+  menuOpen.addEventListener('click', function(){
+    console.log('U ok?')
+
+    menuOpen.classList.toggle('is-active')
+
+    menu.classList.toggle('is-active')
+
+  }  )
+  
+
+
+  var xboxOne = document.querySelector('#xbox');
+  console.log(xboxOne.checked)
+
+
+
+  xboxOne.addEventListener('click', function()
+  {
+    var xboxOneValue = xboxOne.checked;
+    console.log('Virker', xboxOneValue);
+    localStorage.setItem('xboxOne', xboxOneValue)
+  } );
+  
+  function checktheXbox(){
+    console.log('Hi!')
+    var xboxValue = localStorage.getItem('xboxOne');
+    console.warn(xboxValue)
+
+    if(xboxValue === 'true') {
+      xboxOne.checked = true;
+  }
+  }
+  
+  checktheXbox();
+</script>
+
+
+
+</body>
+</html>
