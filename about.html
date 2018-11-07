@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chezzeduck</title>
+
+   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.css">
+  <style>
+    p.title {
+      text-align: center;
+    }
+
+    p.subtitle{
+      text-align: center;
+    }
+
+    .column {border-radius:25px;
+        margin:25px;
+      }
+    .button {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+    }
+    iframe {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .tesla {
+      display: flex;
+      align-items: center;
+    }
+    .link {
+      color: DarkTurquoise ;
+    }
+    footer {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://www.youtube.com/channel/UCQxASKhMmkqPw4kowKSm1xQ/videos">
+      <img src="Titelfoto.png" width="" height="28">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+
+    <div class="navbar-start">
+
+      <a class="navbar-item" href="index.html">
+        Home
+      </a>
+
+      <a class="navbar-item" href="Merch.html">
+        Merch
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Other:
+        </a>
+
+        <div class="navbar-dropdown" >
+          <a class="navbar-item" href="https://www.youtube.com/channel/UCQxASKhMmkqPw4kowKSm1xQ">
+            Youtube
+          </a>
+
+          <a class="navbar-item" href="https://www.instagram.com/chezzeduck/">
+            Instagram
+          </a>
+
+          <a class="navbar-item" href="https://twitter.com/Chezzeproducti1">
+            Twitter
+          </a>
+
+          <a class="navbar-item" href="https://discordapp.com/channels/418439911910277123/426074972864249867">
+            Discord
+          </a>
+
+          <a class="navbar-item" href="contact.html">
+            Contact on website
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+
+
+ <div class="container">
+
+  <div class='content'>
+
+    <div class='columns is-centered'>
+
+      <div class="column is-three-quarters has-background-light">
+      <p class="title is-1">About</p>
+    <p class="subtitle is-2">Me</p>
+      </div>
+  </div>
+
+    <div class="columns is-6 is-centered">
+
+      <div class="column is-one-third has-background-light">
+
+      <p>
+        I am a 14 year old boy. I am in 8 grade on a (kinda) normal school in Copenhagen.
+
+        I do html as a hobby and made this site myself (with help).
+      </p>
+
+      </div>
+
+      <div class="column is-one-third has-background-light">
+
+      <p>
+        I like stuff like Marvel movies and (some) Comics.
+        I play Xbox a lot and i like the game Forza.
+        If you want to add me on Xbox my Gamertag is Chezzzeduck.
+      </p>
+      
+    </div>
+    <br>
+<div class="columns is-8 is-centered"> 
+
+    <div class="columns is-one-third is-centered"> 
+
+      <div class="column is-one-third has-background-light">
+
+      <p> I really appreciate Elon Musk's work. I am a Big fan of his. Thats why there is a picture of the falcon Heavy here →
+      </p> 
+
+      </div>  
+
+      <div class="tesla column is-one-third has-background-light">
+
+        <figure class="image is-480x480 is-centered">
+
+          <img  src="https://i.redd.it/q744askfdue01.jpg">
+
+        </figure>
+      </div>
+</div>
+    </div>
+  </div>
+</div>
+
+ 
+<footer id="footer" class="footer">
+     <div class="columns is-gapless">
+   <div class="column">
+      
+      
+    
+     
+      <p> 
+
+       <a href="contact.html" class="link is-info"> Contact me
+        </a>
+    </p>
+    <br>
+    
+      <p> 
+        <a href="https://discordapp.com/channels/418439911910277123/426074972864249867" class="link is-info">
+          Discord 
+        </a>
+      </p>
+      <br>
+
+    </div>
+  <div class="column">
+    <p> <a href="index.html" class="link is-info">Home
+    </a> </p>
+    <br>
+    <p> </p>
+    <p> <a href="Merch.html" class="link is-info">Merch</a></p>
+    </div>
+  <div class="column">
+     <P> This side was made with Bulma </p>
+
+     <P> <strong>2018</strong> </P>
+  </div>
+  </div>
+</footer>
+
+
+<script>
+  console.log('Hello World!')
+
+  var menuOpen = document.querySelector('.navbar-burger');
+  var menu = document.querySelector(
+    '.navbar-menu') ;
+
+  menuOpen.addEventListener('click', function(){
+    console.log('U ok?')
+
+    menuOpen.classList.toggle('is-active')
+
+    menu.classList.toggle('is-active')
+
+  }  )
+  
+
+</script>
+
+
+
+</body>
+</html>
